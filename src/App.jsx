@@ -22,11 +22,11 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>Pokedex</h1>
-      <ul>
+      <ul className="pokemons">
         {Object.values(pokemons).map(({ id, name, sprites, types }) => (
-          <li>
+          <li className={`card ${types[0].type.name}`} key={id}>
             <img src={sprites.front_default} alt="pokemons" />
             <h2>
               {id}. {name}
@@ -35,6 +35,9 @@ function App() {
           </li>
         ))}
       </ul>
+
+     
+     
     </div>
   );
 }

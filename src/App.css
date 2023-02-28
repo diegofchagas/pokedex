@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-image: linear-gradient(270deg, #91eae4, #86a8e7, #7f7fd5);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.card {
+  max-width: 300px;
+  padding: 20px;
+  color: #222;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.fire {
+  background-color: #ff7f00;
+}
+
+.grass {
+  background-color: aquamarine;
+}
+
+.water {
+  background-color: transparent;
+  backdrop-filter: blur(90px);
+  backdrop-filter: brightness(95%);
+  border: 2px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: drop-shadow(90px 4px 40px rgb(255, 0, 0));
+
+}
+
+.bug {
+  background-color: #f8d5a3;
+}
+
+.normal {
+  background-color: white;
+}
+
+.electric {
+  background-color: #f2eac6;
+}
+
+.ground {
+  background-color: #eeab9d;
+}
+
+.poison {
+  background-color: #b1e9bc;
+}
+
+.fairy {
+  background-color: #f1ddf5;
+}
