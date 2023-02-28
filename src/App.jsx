@@ -19,13 +19,19 @@ function App() {
     getPokemons(25)
   },[])
 
-  console.log(pokemons)
+  
 
 
   return (
     <div>
        <h1>Pokedex</h1>
-        
+        <ul>
+          {Object.values(pokemons).map(({id,name,sprites,types})=> <li>
+            <img src={sprites.front_default} alt="pokemons" />
+            <h2>{id}. {name}</h2>
+            <p>{types.map(({type})=> type.name).join(" || ")}</p>
+            </li>)}
+        </ul>
 
     </div>
   )
