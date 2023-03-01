@@ -33,6 +33,10 @@ body {
   background-color: white;
 }
 
+.card-image{
+  max-width: 150px;
+}
+
 .fire {
   background-color: #ff7f00;
 }

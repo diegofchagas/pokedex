@@ -25,9 +25,9 @@ function App() {
     <div className="container">
       <h1>Pokedex</h1>
       <ul className="pokemons">
-        {Object.values(pokemons).map(({ id, name, sprites, types }) => (
+        {Object.values(pokemons).map(({ id, name, types }) => (
           <li className={`card ${types[0].type.name}`} key={id}>
-            <img src={sprites.front_default} alt="pokemons" />
+            <img className="card-image" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`} alt="pokemons" />
             <h2>
               {id}. {name}
             </h2>
