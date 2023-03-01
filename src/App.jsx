@@ -31,7 +31,7 @@ function App() {
             <h2>
               {id}. {name}
             </h2>
-            <p>{types.map(({ type }) => type.name).join(" || ")}</p>
+            <p className="tipo">{types.map(({ type }) => type.name).join(" || ")}</p>
           </li>
         ))}
       </ul>
