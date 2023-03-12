@@ -17,6 +17,7 @@ body {
   text-align: center;
   padding-top: 15px;
   margin-bottom: 15px;
+  font-size: 50px;
 }
 
 .pokemons {
@@ -49,14 +50,61 @@ color: #2f2e2e;
   color:#615e5e;
   padding-top: 5px;
   position: relative;
-  top: 40px;
+  top: 45px;
   transition: top 1s;
+  font-size: 1.25rem;
+  
 }
 
 .card:hover .tipo{
   cursor: pointer;
   top: 0;
+  
 }
+
+.busca-container{
+  margin-block: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.busca{
+  border: none;
+  outline: none;
+  background-color:transparent;
+  box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.1);;
+  padding-inline: 30px;
+  border-radius: 10px;
+  width: 0%;
+  color:#615e5e;
+  font-size: 20px;
+  line-height: 40px;
+  transition: 1s;
+}
+.busca:hover{
+ background-color: white;
+  width: 30%;
+
+}
+
+.busca-container svg{
+  color:white;
+  transition: 0.5s;
+}
+
+.busca-container:hover svg{
+  color: transparent;
+
+}
+
+.busca::placeholder{
+  font-size: 18px;
+  line-height: 40px;
+  color: #615e5e;
+}
+
 
 .fire {
   background-color: #ff7f00;
