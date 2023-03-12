@@ -38,14 +38,13 @@ function App() {
 
       <div className="busca-container">
         <input 
-        
         className="busca"
         type="search" 
         placeholder="pesquisar pokemons" 
         value={busca}
         onChange={({target})=> setBusca(target.value)} 
         />
-         <MagnifyingGlass size={50}/>
+         <span><MagnifyingGlass size={40}/></span> 
       </div>
 
       <ul className="pokemons">

@@ -68,6 +68,7 @@ color: #2f2e2e;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .busca{
@@ -89,15 +90,10 @@ color: #2f2e2e;
 
 }
 
-.busca-container svg{
+.busca-container span svg{
   color:white;
-  transition: 0.5s;
 }
 
-.busca-container:hover svg{
-  color: transparent;
-
-}
 
 .busca::placeholder{
   font-size: 18px;
