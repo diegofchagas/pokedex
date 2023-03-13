@@ -37,6 +37,7 @@ function App() {
       <h1>Pokedex</h1>
 
       <div className="busca-container">
+      <MagnifyingGlass size={40}/>
         <input 
         className="busca"
         type="search" 
@@ -44,7 +45,6 @@ function App() {
         value={busca}
         onChange={({target})=> setBusca(target.value)} 
         />
-         <span><MagnifyingGlass size={40}/></span> 
       </div>
 
       <ul className="pokemons">
