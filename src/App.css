@@ -63,12 +63,11 @@ color: #2f2e2e;
 }
 
 .busca-container{
-  margin-block: 40px;
-  padding: 10px;
+  margin-block: 2.5rem;
+  padding: .625rem;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .busca{
@@ -76,12 +75,12 @@ color: #2f2e2e;
   outline: none;
   background-color:transparent;
   box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.1);;
-  padding-inline: 30px;
-  border-radius: 10px;
+  padding-inline: 1.87rem;
+  border-radius: .625rem;
   width: 0%;
   color:#615e5e;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
   transition: 1s;
 }
 .busca:hover{
@@ -96,8 +95,8 @@ color: #2f2e2e;
 
 
 .busca::placeholder{
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
   color: #615e5e;
 }
 
